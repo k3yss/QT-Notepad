@@ -53,6 +53,7 @@
     <property name="title">
      <string>Edit</string>
     </property>
+    <addaction name="actionCut"/>
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
     <addaction name="actionUndo"/>
@@ -72,18 +73,34 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave_as"/>
   </widget>
   <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/imgs/New.bmp</normaloff>
+     <normalon>:/imgs/assets/New.bmp</normalon>:/imgs/New.bmp</iconset>
+   </property>
    <property name="text">
     <string>New</string>
    </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/assets/Open.bmp</normaloff>:/imgs/assets/Open.bmp</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
   </action>
   <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/assets/Save.bmp</normaloff>:/imgs/assets/Save.bmp</iconset>
+   </property>
    <property name="text">
     <string>Save as</string>
    </property>
@@ -118,7 +135,14 @@
     <string>Redo</string>
    </property>
   </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
