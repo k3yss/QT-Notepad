@@ -29,6 +29,18 @@ private slots:
 
     void on_actionSave_as_triggered();
 
+    void on_actionEXIT_triggered();
+
+    void on_actionCopy_triggered();
+
+    void on_actionPaste_triggered();
+
+    void on_actionCut_triggered();
+
+    void on_actionUndo_triggered();
+
+    void on_actionRedo_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile = "";
