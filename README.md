@@ -12,9 +12,6 @@ Qt Notepad is a simple, lightweight text editor written in C++ using the Qt fram
 * Save documents
 * Cut, copy, and paste text
 * Undo and redo actions
-* Change font family, size, and color
-* Change background color
-* Find and replace text
 
 # Requirements
 * Qt 5.x
